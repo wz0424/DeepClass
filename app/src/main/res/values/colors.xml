@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorPowderBlue">#B0E0E6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGrey">#A9A9A9</color>
+    <color name="colorFireBrick">#B22222</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightBlue">#ADD8E6</color>
+    <color name="colorSpringGreen">#54FF9F</color>
+    <color name="灰色">#EAEAEA</color>
+    <color name="黄色">#EE9A00</color>
+    <color name="black">#0A0A0A</color>
+    <color name="holo_orange_light">#FFFFBB33</color>
+    <color name="animation">#03DAC5</color>
+</resources>

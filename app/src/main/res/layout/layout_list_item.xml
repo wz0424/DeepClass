@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="@color/holo_orange_light">
+
+    <ImageView
+        android:id="@+id/iv_qst_folder"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="#fff"
+        android:src="@drawable/question" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            tools:text="题目一" />
+
+        <TextView
+            android:id="@+id/tv_desp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            tools:text="我是题目简单描述" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

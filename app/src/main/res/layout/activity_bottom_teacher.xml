@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/灰色">
+
+    <LinearLayout
+        android:id="@+id/line1_tea"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv1_tea"
+            android:src="@drawable/class1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv1_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/黄色"
+            android:text="@string/bottom_class"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2_tea"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv2_tea"
+            android:src="@drawable/create1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/黄色"
+            android:text="@string/bottom_create"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3_tea"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv3_tea"
+            android:src="@drawable/person1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv3_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/黄色"
+            android:text="@string/bottom_person"/>
+    </LinearLayout>
+</LinearLayout>

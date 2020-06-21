@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_orange_light">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="52dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="113dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/qstd_tv_desp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h3"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h2"
+        tools:text="“但愿人长久，千里共婵娟”，其中婵娟指的是什么？" />
+
+    <ScrollView
+        android:id="@+id/qstd_sv_ctnr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h3"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@id/qstd_tv_desp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/qstd_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h2"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h1"
+        tools:text="3-1 诗词鉴赏" />
+
+    <CheckBox
+        android:id="@+id/asw_cb_a"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/cb_style"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h4"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h3"
+        tools:text="月亮" />
+
+    <CheckBox
+        android:id="@+id/asw_cb_b"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/cb_style"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h5"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h4"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="美人" />
+
+    <CheckBox
+        android:id="@+id/asw_cb_c"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/cb_style"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h6"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h5"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="丝绸" />
+
+    <CheckBox
+        android:id="@+id/asw_cb_d"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/cb_style"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h7"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h6"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="舞蹈" />
+
+    <Button
+        android:id="@+id/asw_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        app:layout_constraintBottom_toTopOf="@+id/qstd_gl_h8"
+        app:layout_constraintEnd_toStartOf="@+id/qstd_gl_v2"
+        app:layout_constraintStart_toStartOf="@+id/qstd_gl_v1"
+        app:layout_constraintTop_toTopOf="@+id/qstd_gl_h7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qstd_gl_h8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

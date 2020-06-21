@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.deepclass.main"
+    android:versionCode="2"
+    android:versionName="2.0"
+    tools:ignore="GradleOverrides">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 写入SD卡的权限：如果你希望保存相机拍照后的照片 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读取SD卡的权限:打开相册选取图片所必须的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络 -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.example.deepclass.databasectrl.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/iccc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iccc"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <service
+            android:name="com.example.deepclass.myutil.AlarmMusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name="com.example.deepclass.myutil.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Welcome"
+            android:label="DeepClass"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name="com.example.deepclass.myutil.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6hEPB2uyn6Hg3j7oi3pHThviHFwoeGim" />
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".register"
+            android:label="注册" />
+        <activity
+            android:name=".mapin"
+            android:label="地图签到" />
+        <activity
+            android:name=".start1"
+            android:label="开始地图签到" />
+        <activity
+            android:name=".start2"
+            android:label="开始人脸签到" />
+        <activity
+            android:name=".opt"
+            android:label="人脸签到" />
+        <activity
+            android:name=".in"
+            android:label="人脸注册" />
+        <activity
+            android:name=".searcher"
+            android:label="查询" />
+        <activity
+            android:name=".delete"
+            android:label="删除" />
+        <activity
+            android:name=".TimeMasterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.example.deepclass.myutil.testActivity" />
+        <activity android:name=".QuestionListActivity" />
+        <activity android:name=".QuestionDetailActivity" />
+        <activity android:name=".QuestionCreateActivity" />
+        <activity android:name=".TimeLeaderboardActivity" />
+        <activity android:name=".GradeLeaderBoardActivity"/>
+        <activity android:name=".StudentMainActivity" />
+        <activity android:name=".TeacherMainActivity" />
+        <activity android:name=".check" />
+        <activity android:name=".check2" />
+        <activity android:name=".StudentLand" />
+        <activity android:name=".TeacherLand" />
+        <activity android:name=".Grade"/>
+
+    </application>
+
+</manifest>

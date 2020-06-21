@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_1_2"
+    android:background="@color/holo_orange_light"
+    android:orientation="horizontal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <!--签到和练习-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/check"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/iv_check"
+                    android:src="@drawable/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/practice"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/iv_practice"
+                    android:src="@drawable/practice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_practice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:textColor="@color/black"
+                    android:text="@string/practice"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        &lt;!&ndash;讨论和统计&ndash;&gt;-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_weight="1">-->
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/discuss"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:gravity="center"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent">-->
+        <!--                <ImageView-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:id="@+id/iv_discuss"-->
+        <!--                    android:src="@drawable/discuss"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="match_parent" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tv_discuss"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="@string/discuss"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:textSize="22dp" />-->
+        <!--            </LinearLayout>-->
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/statistics"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:gravity="center"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:id="@+id/iv_statiatics"-->
+        <!--                    android:src="@drawable/statistics2"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="match_parent" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tv_statistics"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:textSize="22dp"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:text="@string/statistics"/>-->
+        <!--            </LinearLayout>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+</FrameLayout>
